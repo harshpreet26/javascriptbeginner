@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script>
+      const cars = ["Ford", "Honda", "Ferrari", "GMC","Toyota"];
+
+      const button = document.getElementById('showCarsButton');
+      const carList = document.getElementById('carList');
+
+      button.addEventListener('click', () =>{
+
+        carList.innerHTML = '';
+
+        for(let i = 0;i < cars.length; i++){
+
+          const listItem = document.createElement('li');
+          //We attach i (index) 
+          listItem.textContent = cars[i];
+
+          carList.appendChild(listItem);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <!--Create a button -->
+    <button id="showCarsButton">Show Cars</button>
+    
+    <ul>
+      <li id="carList"></li>
+    </ul>
+  </body>
+</html>
