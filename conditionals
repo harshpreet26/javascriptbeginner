@@ -1,0 +1,22 @@
+  var age = "kasjdfka";
+  
+  if(age > 18){
+    console.log("You are permitted.");
+  } else if (age < 18){
+    console.log("You are not allowed.")
+  } else{
+    console.log("This is impossible.")
+  }
+     
+//another way to write with switch
+
+ switch(age) {
+   case age > 18:
+    console.log("You are permitted");
+   break;
+   case age < 18:
+    console.log("You are not allowed.");
+   break;
+   default:
+    console.log("This is impossible.") 
+ }
