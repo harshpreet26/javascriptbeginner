@@ -6,7 +6,8 @@ for(let i = 0; i < items.length; i++){
   console.log(items[i]);
 }
 
-//Alternate way to iterate through this array using for-in
-for(item in items){
-  console.log(item[index]);
+var items = ["This", "is", "my", "array", "being", "printed."];
+
+for(const index in items){
+  console.log(items[index]);
 }
